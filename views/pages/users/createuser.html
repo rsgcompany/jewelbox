@@ -1,0 +1,21 @@
+<div class="container-fluid bordered_container col-lg-8">
+	<div class="row">
+		<div class="col-lg-12">
+			<h3 class="sub-heading-blue">User Details</h3>
+				<form ng-submit="createUser()">
+					<div class="form-group">
+						<input type="text" class="form-control" name="firstname" ng-model="user.firstname" placeholder="First Name" required/>
+					</div>
+					<div class="form-group">
+						<input  type="text" class="form-control" name="lastname" ng-model="user.lastname" placeholder="Last Name" required/>
+					</div>
+					<div class="form-group">
+						<input type="email" class="form-control" name="email" ng-model="user.email" placeholder="Email" required/>
+					</div>
+					<div class="form-group">
+						<input class="form-control"  type="submit" value="CREATE" class="btn btn-primary" required/>
+					</div>
+				</form>
+		</div>
+	</div>
+</div>

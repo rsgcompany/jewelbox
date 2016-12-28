@@ -1,0 +1,40 @@
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0" data-ng-class="{ 'toggleOn': open, 'toggleOff': !open }">
+    <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+		<!--LOGO-->
+        <a class="navbar-brand" href="#">
+			<img class="small_logo" src="../../../images/logo_icon.png" alt="JEWEL BOX" />
+			<img class="big_logo" src="../../../images/logo.jpg" alt="JEWEL BOX" /></a>
+		<!--/LOGO-->
+		<!--MY TASKS-->
+		<div class="togglingmenu_button" data-ng-class="{ 'toggleOn_btn': open, 'toggleOff_btn': !open }">
+		<button type="button" class="navbar-toggle collapsed" ng-click="open = !open" >
+        			<span class="sr-only">Toggle navigation</span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+        			<span class="icon-bar"></span>
+		</button>
+	</div>
+
+		<!--<div  class="my_tasks_user_actions_header">
+			<a href="#" class="btn btn-bordered"><i class="fa fa-check"></i>My Tasks</a>
+		</div>-->
+		<!--/MY TASKS-->
+		<!--<div class="notification_icon_header_branding">
+			<a class="notification_bell_header_top_links" data-toggle="dropdown">
+				<i class="fa fa-bell fa-fw"></i>
+			</a>
+		</div>-->
+		<h4 update-title class="page_title_in_topbar"> </h4>
+    </div>
+    <!-- /.navbar-header -->
+    <header-notification></header-notification>
+
+    <sidebar></sidebar>
+</nav>
